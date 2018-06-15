@@ -119,8 +119,11 @@ global.bruhdash = {
   // removes all given values from an array
   pull: function (arr, x, y) {
     for (var i = 0; i < arr.length; i++){
-      if (arr[i] === x || arr[i] === y){
-        arr.pop([i]);
+      if (arr[i] === x){
+        arr.shift(arr[i]);
+      }else{
+        arr[i] === y;
+        arr.shift(arr[i])
       }
     }
     return arr;
